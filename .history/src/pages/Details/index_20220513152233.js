@@ -1,0 +1,33 @@
+import { useLocation } from "react-router-dom";
+import "./index.scss";
+
+const IMG_LINK = "https://image.tmdb.org/t/p/";
+
+function DetailsPage() {
+  const location = useLocation();
+  const state = location.state;
+
+  return (
+    <div className="movie_card">
+      <div className="info_section">
+        <div className="movie_header">
+          <img
+            className="locandina"
+            src={`${IMG_LINK}w220_and_h330_face${state.poster_path}`}
+            alt=""
+          />
+          <h1>{state.title}</h1>
+          <h4>{state.release_date}</h4>
+        </div>
+        <div className="movie_desc">
+          <p className="text">
+            {state.overview}
+          </p>
+        </div>
+      </div>
+      <div className="blur_back"></div>
+    </div>
+  );
+}
+
+export default DetailsPage;

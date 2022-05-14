@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: column;  
+
+  input {
+    width: 100%;
+    padding: 7px;
+    font-size: 1.3rem;
+    color: rgb(99, 99, 99);
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .search-bar-items {
+    width: 100%;
+    background: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
