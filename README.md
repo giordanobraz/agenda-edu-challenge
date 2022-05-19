@@ -6,7 +6,7 @@ Cada item da lista deve levar para uma página de detalhes do filme, aonde deve 
 
 Deve ser possível realizar pesquisa por filmes em qualquer tela, a request de pesquisa deve ser disparada utilizando o processo de controle de fluxo **Debounce​** com um limite de tempo de **500ms**, esse controle deve ser feito devido ao limite de requests por segundo que a **API** impõe.
 
-Sobre a limitação de requests por segundo da **API** do [TheMovieDB][tmdb-api-url], esse limite deve ser tratado e deve ser exibido um feedback visual não invasivo para o usuário indicando que não foi possível realizar a operação devido a limitação da **API** e solicite que ele tente novamente em alguns segundos.
+Sobre a limitação de requests por segundo da **API** do The Movie DB, esse limite deve ser tratado e deve ser exibido um feedback visual não invasivo para o usuário indicando que não foi possível realizar a operação devido a limitação da **API** e solicite que ele tente novamente em alguns segundos.
 
 
 ## Requisitos
